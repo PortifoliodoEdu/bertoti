@@ -1,29 +1,31 @@
-```markdown
-# engenhariadesoftwarefatec
-atividade da aula 19/02/23 - Prof Juliano - 1º Aula do semestre - 2º semestre
+  
 
-# Texto da url: https://dontpad.com/engenhariadesoftwarefatec
+**LISTA DE ATIVIDADES - 2º SEMESTRE - 2024 **
 
-# "Withain Google, we sometimes say, “Software engineering is programming integrated over time.” Programming is certainly a significant part of software : engineering after all, programming is how you generate new software in the first place. If you accept this distinction, it also becomes clear that we might need to delineate between programming tasks (development) and software engineering tasks (development, modification, mmimaintenance). The addition of time adds an important new dimension to programming. Cubes aren’t squares, distance isn’t velocity. Software engineering isn’t prograng.  "
-#"Withain Google, we sometimes say, “Software engineering is programming integrated over time.” Programming is certainly a significant part of software : engineering after all, programming is how you generate new software in the first place. If you accept this distinction, it also becomes clear that we might need to delineate between programming tasks (development) and software engineering tasks (development, modification, mmimaintenance). The addition of time adds an important new dimension to programming. Cubes aren’t squares, distance isn’t velocity. Software engineering isn’t prograng.  "
+De 1 a 4 contidas nesse mesmo arquivo, em texto:
+    1️⃣. comentários do livro SWE at Google
+    2️⃣. três exemplos de tradeoffs
+    3️⃣. análise dos requisitos não funcionais e tradeoffs das arquiteturas dos slides 24 à 29
+    
+    --- daqui pra frente tudo aplicado em um sistema que você mesmo escolhe-----
+    4️⃣. definição da arquitetura
 
-#"We see three critical differences between programming and software engineering: time, scale, and the trade-offs at play. On a software engineering project, engineers need to be more concerned with the passage of time and the eventual need for change. In a software engineering organization, we need to be more concerned about scale and efficiency, both for the software we produce as well as for the organization that is producing it. Finally, as software engineers, we are asked to make more complex decisions with higher-stakes outcomes, often based on imprecise estimates of time and growth."
 
-#📖📚 https://abseil.io/resources/swe-book
+Em arquivos no repositório
+    5️⃣. classes uml: Na pasta raiz do repositorio: bertorti (Nome do arquivo: "Atividade 5 - classes uml" )
+    6️⃣. código java: No endereço: main\java\org\example
+    7️⃣. testes: No endereço: test\java
+    8️⃣. diagrama de casos de uso: Na pasta raiz do repositorio: bertorti (Nome do arquivo: )
 
-#(Tradução)
 
-#'Na Google, dizemos por vezes que "a engenharia de software é a programação integrada ao longo do tempo". 
-A programação é certamente uma parte importante da engenharia de software: afinal de contas, a programação é a forma de criar novo software. Se aceitarmos esta distinção, também se torna claro que podemos precisar de delinear entre tarefas de programação (desenvolvimento) e tarefas de engenharia de software (desenvolvimento, modificação, manutenção). A adição do tempo acrescenta uma nova dimensão importante à programação. Os cubos não são quadrados, a distância não é a velocidade. A engenharia de software não é um programa. Vemos três diferenças críticas entre a programação e a engenharia de software: tempo, escala e os compromissos em jogo. Num projeto de engenharia de software, os engenheiros precisam de estar mais preocupados com a passagem do tempo e a eventual necessidade de mudança. Numa organização de engenharia de software, precisamos de estar mais preocupados com a escala e a eficiência, tanto para o software que produzimos como para a organização que o está a produzir. Finalmente, como engenheiros de software, somos solicitados a tomar decisões mais complexas com resultados mais arriscados, muitas vezes baseados em estimativas imprecisas de tempo e crescimento.
 
-#Traduzido com a versão gratuita do tradutor - DeepL.com'
 
-#(Os dois parágrafos são do livro chamado ' Sofware Enginering at Google' )
+**ATIVIDADE 1️⃣ comentários do livro SWE at Google**
 
---------------------------------------------------------------------
---------------------------------------------------------------------
+Texto de estudo:
+     Within Google, we sometimes say, “Software engineering is programming integrated over time.” Programming is certainly a significant part of software engineering: after all, programming is how you generate new software in the first place. If you accept this distinction, it also becomes clear that we might need to delineate between programming tasks (development) and software engineering tasks (development, modification, maintenance). The addition of time adds an important new dimension to programming. Cubes aren’t squares, distance isn’t velocity. Software engineering isn’t programming. 
 
-#📝 ATIVIDADE: 1 - Baseado no texto acima, responda 'O que é Engenharia de software?'
+# Baseado no texto acima, responda 'O que é Engenharia de software?'
 
 #O que consegui compreender do texto é que a engenharia de software é sim baseada em programação mas não se limita a isso, é uma metodologia, ou melhor, um conjunto de formas de pensar que aplicadas à programação garantem que grandes organizações possam tomar decisões assertivas e de longo prazo, 
 
@@ -33,21 +35,38 @@ RESPOSTA DO PROFESSOR: ENG.SOFTWARE = PROGRAMAÇÃO + TRADE OFFICE + ESCALA + TE
 -> TRADE-OFF: TUDO é um jogo de perde-ganha, é a coisa mais chata em engenharia de software é cara que gosta de defender tecnologia, como quem acha que uma linguagem é superior a todas,
 tradeoff é entender quais são as fraquezas de cada tecnologia e seu custo-benefício
 
-NINGUÉM em uma empresa GRANDE de tecnologia usa mais de UMA linguagem, exemplo de uma pessoa que trabalha no IFOOD, tem vaga que o ÚNICO REQUISITO é saber uma única linguagem, porque em empresas grandes, diferentes de empresas pequenas, você vai trabalhar em um setor específico usando uma única tecnologia.
 
-APRENDA O DIFÍCIL, isso que te gera vaga.
-FRONTEND está com escassez de vagas.
-Há muita vaga em Java.
-Faculdade pode ser relevante para conseguir vagas mais disputadas ou de outro nível.
+**ATIVIDADE 2️⃣ - três exemplos de tradeoffs**
 
---- https://duckdb.org/ (Antes tinha um pedaço no site escrito 'Onde não usar', é um exemplo que em toda tecnologia tem locais que você tem de ter em mente onde não usar, nenhuma ferramenta é aplicada em todas as situações)
+Alguns exemplos de trade-offs:
 
-Ruby é uma linguagem de programação muito lenta.
 
-----------------
 
-Atividade 3:
-Vamos associar cada arquitetura a um sistema específico para ilustrar melhor os requisitos não funcionais escolhidos. 
+    1º Exemplo: Linguagem de Programação: Python vs Java:
+
+        Benefício do Python: Sintaxe simples e legível, fácil de aprender e usar.
+        Ônus do Python: Menor desempenho em comparação com Java devido à natureza interpretada.
+        Benefício do Java: Alta performance devido à natureza compilada e máquina virtual Java (JVM).
+        Ônus do Java: Sintaxe mais verbosa e complexa, curva de aprendizado inicial mais íngreme comparada ao Python.
+
+
+    2º Exemplo: Framework Web: Flask vs Django:
+        Benefício do Flask: Leve e minimalista, ideal para pequenas aplicações e APIs.
+        Ônus do Flask: Menos funcionalidades integradas comparado ao Django.
+        Benefício do Django: Framework completo com ORM (Object-Relational Mapping), administração de painel e autenticação integrada.
+        Ônus do Django: Mais complexidade e maior curva de aprendizado comparado ao Flask.
+
+
+    3º Banco de Dados Relacional vs. Banco de Dados NoSQL:
+
+        Benefício do Banco de Dados Relacional: Estruturação rigorosa dos dados, consistência e suporte a transações ACID.
+        Ônus do Banco de Dados Relacional: Menor escalabilidade horizontal em comparação com bancos de dados NoSQL, como MongoDB.
+        Benefício do Banco de Dados NoSQL: Alta escalabilidade e flexibilidade para grandes volumes de dados não estruturados.
+        Ônus do Banco de Dados NoSQL: Menor suporte a transações complexas e, em alguns casos, consistência eventual em vez de consistência imediata.
+          
+
+
+**ATIVIDADE 3️⃣- análise dos requisitos não funcionais e tradeoffs das arquiteturas dos slides 24 à 29**
 
 1. **Layered Architecture Style:**
    - *Bom Requisito Não Funcional:* Simplicidade
@@ -84,3 +103,42 @@ Vamos associar cada arquitetura a um sistema específico para ilustrar melhor os
      - *Explicação:* Projetado para ser altamente escalável, permitindo que diferentes partes do sistema cresçam independentemente.
    - *Mau Requisito Não Funcional:* Custo Total
      - *Explicação:* A abordagem de microservices geralmente envolve custos mais elevados devido à gestão e coordenação de serviços distribuídos.
+
+
+
+
+
+
+**ATIVIDADE 4️⃣** 
+
+**Arquitetura em Camadas (Layered Architecture)**
+
+    A arquitetura em camadas em engenharia de software divide um sistema em camadas distintas, onde cada camada tem uma responsabilidade específica e comunica-se apenas com camadas adjacentes. Isso promove a modularidade, a reutilização e facilita a manutenção do código.
+
+    No seu caso, os códigos não seguem exatamente o padrão de arquitetura em camadas típica, como apresentado em sistemas complexos. No entanto, podemos considerar uma adaptação simplificada dessa arquitetura:
+
+        Camada de Modelo (Model Layer): Representada pelas classes CadastrarAluno, Curso, e Instrutor, que encapsulam dados e comportamentos específicos relacionados a alunos, cursos e instrutores.
+
+        Camada de Lógica de Negócio (Business Logic Layer): Representada pela classe GerenciamentoCursos, que contém lógica para gerenciar cursos, matrículas e cancelamentos.
+
+        Embora essas classes não estejam completamente separadas em camadas distintas como em um sistema complexo, podemos argumentar que há uma separação parcial de responsabilidades:
+
+        Camada de Modelo: CadastrarAluno, Curso, e Instrutor são responsáveis por encapsular os dados e operações básicas relacionadas aos alunos, cursos e instrutores.
+
+        Camada de Lógica de Negócio: GerenciamentoCursos é responsável por gerenciar os cursos, incluindo adicionar cursos, matricular alunos, cancelar matrículas e listar cursos disponíveis.
+
+    Por que essa foi a arquitetura escolhida?
+        Separação de Responsabilidades: As classes estão organizadas de forma a separar os dados (modelos) das operações de lógica de negócio (gerenciamento de cursos).
+
+    Reutilização de Código: Cada classe representa um tipo de entidade (aluno, curso, instrutor) com suas próprias propriedades e métodos, facilitando a reutilização e manutenção do código.
+
+    Simplicidade e Clareza: Para um sistema simples como o desenvolvido, essa organização pode ser suficiente para manter o código organizado e fácil de entender.
+
+    Considerações finais:
+    Embora essa estrutura não seja uma implementação completa de arquitetura em camadas, ela mostra uma intenção de separação de responsabilidades entre modelos de dados e lógica de negócio, o que é um princípio fundamental da arquitetura em camadas.
+
+
+
+
+
+
